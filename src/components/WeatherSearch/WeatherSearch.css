@@ -9,14 +9,9 @@
 .forecast-day {
   margin-bottom: 20px;
   padding: 10px;
-  background: white;
+  background: #bdcdc5;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.forecast-day h3 {
-  color: #007bff;
-  margin-bottom: 10px;
 }
 
 .forecast-item {

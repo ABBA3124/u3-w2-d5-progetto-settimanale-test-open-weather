@@ -31,7 +31,7 @@ function NavBar({ onSearch }) {
   }
 
   return (
-    <Navbar expand="lg" className="bg-secondary">
+    <Navbar expand="lg" className="" style={{background: "#BDCDC5"}}>
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/" onClick={handleHomeClick}>
           <img
@@ -39,6 +39,7 @@ function NavBar({ onSearch }) {
             height={50}
             alt="Logo del sito"
             onClick={handleHomeClick}
+            style={{background:"#4A628B"}}
           />
         </Navbar.Brand>
         <Form className="d-flex" onSubmit={handleSubmit}>
@@ -50,8 +51,9 @@ function NavBar({ onSearch }) {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             disabled={isLoading} 
+            
           />
-          <Button variant="danger" type="submit" disabled={isLoading}>
+          <Button className="border text-white" variant="" style={{background: "#4A628B"}} type="submit" disabled={isLoading}>
             {isLoading ? "Cerco..." : "Cerca"} 
             {/* // Testo del pulsante cambia in base al loading */}
           </Button>
@@ -60,7 +62,7 @@ function NavBar({ onSearch }) {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto me-5 my-2 my-lg-0" style={{ maxHeight: "100px" }}>
-            <NavLink to="/" className="nav-link" onClick={handleHomeClick}>
+            <NavLink to="/" className="nav-link text-white border rounded-3" style={{background:"#7B94A4"}} onClick={handleHomeClick}>
               Home
             </NavLink>
           </Nav>

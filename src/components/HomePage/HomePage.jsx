@@ -76,7 +76,7 @@ function HomePage({ nome }) {
       ) : weatherData ? (
         <div className="text-center">
             <hr />
-          <h1>
+          <h1 className='' style={{color:"white"}}>
             Condizioni Meteo per {weatherData.name}, {weatherData.sys.country}
           </h1>
           <div className="d-flex justify-content-evenly mt-2 mb-4 ">
@@ -88,7 +88,7 @@ function HomePage({ nome }) {
                 style={{ width: "60%", height: "450px", objectFit: "cover" }}
               />
             )}
-            <div className="text-start">
+            <div className="text-start rounded-4 border p-3" style={{background:"#BDCDC5"}}>
               <img
                 src={`http://openweathermap.org/img/w/${weatherData.weather[0]?.icon}.png`}
                 height={120}

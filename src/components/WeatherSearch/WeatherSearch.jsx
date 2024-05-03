@@ -113,7 +113,7 @@ function WeatherSearch({ searchTerm }) {
         </div>
       ) : weatherData ? (
         <div className="text-center">
-          <h1>
+          <h1 style={{color:"white"}}>
             Condizioni Meteo per {weatherData.name}, {weatherData.sys.country}
           </h1>
           <div className="d-flex justify-content-evenly mt-2 mb-4 ">
@@ -125,7 +125,7 @@ function WeatherSearch({ searchTerm }) {
                 style={{ width: "60%", height: "450px", objectFit: "cover" }}
               />
             )}
-            <div className="text-start">
+            <div className="text-start rounded-4 border p-3" style={{background:"#BDCDC5"}}>
               <img
                 src={`http://openweathermap.org/img/w/${weatherData.weather[0]?.icon}.png`}
                 height={120}
@@ -155,7 +155,7 @@ function WeatherSearch({ searchTerm }) {
             </div>
           </div>
           <div className="text-center">
-            <h1>Previsioni Meteo Prossimi Giorni:</h1>
+            <h1 className="mb-3" style={{color:"white"}}>Previsioni Meteo Prossimi Giorni:</h1>
           </div>
           <div className="text-start row">
             {groupedForecast &&
@@ -188,7 +188,7 @@ function WeatherSearch({ searchTerm }) {
         </div>
       ) : (
         <div className="text-center mt-5 mb-5">
-          <h3>Inserisci una località per visualizzare le condizioni meteo.</h3>
+          <h3>Inserisci una località valida per visualizzare le condizioni meteo.</h3>
         </div>
       )}
     </div>
