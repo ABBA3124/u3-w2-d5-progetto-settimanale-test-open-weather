@@ -1,0 +1,35 @@
+.forecast-info {
+  margin-top: 20px;
+  background: rgba(135, 206, 235, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.forecast-day h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.forecast-item {
+  margin-bottom: 10px;
+}
+
+.forecast-item p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.forecast-item strong {
+  color: #333;
+}
