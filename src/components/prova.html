@@ -1,0 +1,9 @@
+<div className="row">
+  <div className="col-12"><strong>Condizioni:</strong> {weatherData.weather[0].description}</div>
+  <div className="col-6"><strong>Temperatura:</strong> {(weatherData.main.temp - 273.15).toFixed(2)}°C</div>
+  <div className="col-6"><strong>percepita:</strong> {(weatherData.main.feels_like - 273.15).toFixed(2)}°C</div>
+  <div className="col-6"><strong>Minima:</strong> {(weatherData.main.temp_min - 273.15).toFixed(2)}°C</div>
+  <div className="col-6"><strong>Massima:</strong> {(weatherData.main.temp_max - 273.15).toFixed(2)}°C</div>
+  <div className="col-6"><strong>Umidità:</strong> {weatherData.main.humidity}%</div>
+  <div className="col-6"><strong>Velocità del Vento:</strong> {weatherData.wind.speed} m/s</div>
+</div>
