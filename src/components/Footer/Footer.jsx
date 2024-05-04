@@ -8,20 +8,73 @@ function Footer() {
         <div className="col-md-4 col-lg-4">
           <strong>Product Collections</strong>
           <ul className="list-unstyled">
-            <li>Current and Forecast APIs</li>
-            <li>Historical Weather Data</li>
-            <li>Weather Maps</li>
-            <li>Weather Dashboard</li>
-            <li>Widgets</li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Current and Forecast APIs
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Historical Weather Data
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Weather Maps
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Weather Dashboard
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Widgets
+              </a>
+            </li>
           </ul>
         </div>
         <div className="col-md-4 col-lg-4">
           <strong>Subscription</strong>
           <ul className="list-unstyled">
-            <li>How to start</li>
-            <li>Pricing</li>
-            <li>Subscribe for free</li>
-            <li>FAQ</li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                How to start
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Pricing
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Subscribe for free
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                FAQ{" "}
+              </a>{" "}
+            </li>
           </ul>
         </div>
         <div className="col-md-4 col-lg-4">
@@ -39,26 +92,91 @@ function Footer() {
         <div className="col-md-4 col-lg-4">
           <strong>Technologies</strong>
           <ul className="list-unstyled">
-            <li>Our technology</li>
-            <li>Accuracy and quality of weather data</li>
-            <li>Connect your weather station</li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Our technology
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Accuracy and quality of weather data
+              </a>
+            </li>
+            <li>
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Connect your weather station
+              </a>
+            </li>
           </ul>
         </div>
         <div className="col-md-4 col-lg-4">
           <strong>Terms & Conditions</strong>
           <ul className="list-unstyled">
-            <li>Terms and conditions of sale</li>
-            <li>Privacy Policy</li>
-            <li>Website terms and conditions</li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Terms and conditions of sale
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Website terms and conditions
+              </a>
+            </li>
           </ul>
         </div>
         <div className="col-md-4 col-lg-4">
           <ul className="list-unstyled">
-            <li>About us</li>
-            <li>Blog</li>
-            <li>OpenWeather for Business</li>
-            <li>ChatBot assistant</li>
-            <li>Ask a question</li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                About us
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Blog
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                OpenWeather for Business
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                ChatBot assistant
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#footer" className="text-decoration-none">
+                {" "}
+                Ask a question
+              </a>
+            </li>
           </ul>
         </div>
         <div className="col-12 text-center my-5">
