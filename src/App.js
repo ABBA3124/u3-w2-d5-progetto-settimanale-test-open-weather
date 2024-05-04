@@ -9,7 +9,7 @@ import NotFoundPage from "./components/NotFoundPage/NotFoundPage"
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [isLoading, setIsLoading] = useState(false) 
-  const Città = ['Roma', 'Milano', 'Patti', 'Palermo', 'Catania']
+  const Città = ['Roma', 'Milano', 'PAtti', 'Pisa', 'Catania']
 
   //aggiornare il termine di ricerca e gestire il reindirizzamento
   const handleSearch = (query) => {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Spinner } from "react-bootstrap"  
+import { DropletHalf, Wind, ThermometerHalf } from 'react-bootstrap-icons';
 
 function HomePage({ nome }) {
   const [weatherData, setWeatherData] = useState(null)
@@ -76,8 +77,8 @@ function HomePage({ nome }) {
       ) : weatherData ? (
         <div className="text-center">
             <hr />
-          <h1 className='' style={{color:"white"}}>
-            Condizioni Meteo per {weatherData.name}, {weatherData.sys.country}
+          <h1 className='mt-3 mb-3' style={{color:"white"}}>
+            Condizioni Meteo {weatherData.name}, {weatherData.sys.country}
           </h1>
           <div className="d-flex justify-content-evenly mt-2 mb-4 ">
             {cityImage && (
@@ -89,31 +90,30 @@ function HomePage({ nome }) {
               />
             )}
             <div className="text-start rounded-4 border p-3" style={{background:"#BDCDC5"}}>
-              <img
+              <p>
+                <strong>Condizioni:</strong> {weatherData.weather[0]?.description}<img
                 src={`http://openweathermap.org/img/w/${weatherData.weather[0]?.icon}.png`}
-                height={120}
+                height={45}
                 alt="Weather icon"
               />
-              <p>
-                <strong>Condizioni:</strong> {weatherData.weather[0]?.description}
               </p>
               <p>
-                <strong>Temperatura:</strong> {(weatherData.main.temp - 273.15).toFixed(2)}°C
+                <strong><ThermometerHalf size={16}/> Temperatura:</strong> {(weatherData.main.temp - 273.15).toFixed(2)}°C
               </p>
               <p>
-                <strong>Percepita:</strong> {(weatherData.main.feels_like - 273.15).toFixed(2)}°C
+                <strong><ThermometerHalf size={16}/> Percepita:</strong> {(weatherData.main.feels_like - 273.15).toFixed(2)}°C
               </p>
               <p>
-                <strong>Temp. Minima:</strong> {(weatherData.main.temp_min - 273.15).toFixed(2)}°C
+                <strong><ThermometerHalf size={16}/> Temp. Minima:</strong> {(weatherData.main.temp_min - 273.15).toFixed(2)}°C
               </p>
               <p>
-                <strong>Temp. Massima:</strong> {(weatherData.main.temp_max - 273.15).toFixed(2)}°C
+                <strong><ThermometerHalf size={16}/> Temp. Massima:</strong> {(weatherData.main.temp_max - 273.15).toFixed(2)}°C
               </p>
               <p>
-                <strong>Umidità:</strong> {weatherData.main.humidity}%
+              <strong><DropletHalf size={16}/> Umidità:</strong> {weatherData.main.humidity}%
               </p>
               <p>
-                <strong>Velocità del Vento:</strong> {weatherData.wind.speed} m/s
+                <strong><Wind size={16}/> Velocità del Vento:</strong> {weatherData.wind.speed} m/s
               </p>
             </div>
           </div>
